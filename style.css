@@ -1,0 +1,19 @@
+#Why-Should-I-Study-Information-Systems{
+    border-top: 1px solid gray;
+}
+.index_reader{
+    font-style: italic;
+    margin-top: 5hv;
+    padding-left: 40px;
+}
+.idented{
+    text-indent: 30px;
+}
+
+.centred_picture{
+    display:block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
