@@ -17,3 +17,21 @@
     margin-right: auto;
 
 }
+.question_form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question_form h2{
+    text-align: center;
+}
+.question_form form{
+    border: 2px solid rgb(43, 179, 233);
+    width: 50%;
+    padding: 10px;
+}
+
+.question_form form textarea{
+    border: 2px solid rgb(43, 179, 233);
+    width: 80%;
+}

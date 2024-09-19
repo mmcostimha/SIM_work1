@@ -8,6 +8,8 @@
     <title>SIM lecture</title>
     <link href="icon.ico" rel="shortcut icon">
     <link href="style.css" rel="stylesheet">
+    <script src="logic.js"></script>
+</head>
 </head>
 
 <body>
@@ -63,7 +65,7 @@
         </p>
         <ul>
             <li>First, you will benefi t more from your organization’s IT applications because you will
-                understand what is “behind” those applications (see Figure 1.1). That is, what you see
+                understand what is “behind” those applications (see <a href="#Figure1.1">Figure 1.1</a>). That is, what you see
                 on your computer screen is brought to you by your MIS department, who are operating
                 “behind” your screen.</li>
             <li>Second, you will be in a position to enhance the quality of your organization’s IT applications with
@@ -90,7 +92,7 @@
 
         <h3>IT Offers Career Opportunities</h3>
         <img src="Captura de ecrã 2024-09-16 094923.png" alt="IT Offers Career Opportunities image"
-            class="centred_picture">
+            class="centred_picture" id="Figure1.1">
         <p>Because information technology is vital to the operation of modern businesses, it offers many
             employment opportunities. The demand for traditional IT staff—programmers, business 10 CHAPTER 1
             Introduction to Information Systems
@@ -118,6 +120,33 @@
             magazines with their job rankings are:
         </p>
     </section>
+    <div class="question_form">
+        <h2>Question for This module</h2>
+        <form action="">
+            <label for="student_name">Student Name</label><br>
+            <input type="text" id="student_name" name="student_name" value="" placeholder="input your name" > <br><br>
+
+            <label for="student_number" >Student Numeber</label><br>
+            <input type="number" id="student_number" name="student_number" value="" placeholder="input your number"><br><br>
+
+            <hr style="margin: top 30px;">
+            <label for="information_system">What is an information system?</label><br>
+            <textarea name="information_system" id="information_system" rows="5"></textarea><br>
+            <label for="meter">Completeness</label>
+            <meter id="meter" value="0" min="0" max="50"></meter>
+            <label for="is_numebre_of_characters" style="color: green;">0</label><br><br>
+
+            <label for="information_system2">Identify and describe the components of an Information System</label><br>
+            <textarea name="information_system2" id="information_system2" rows="5"></textarea><br>
+            <label for="meter">Completeness</label>
+            <meter id="meter" value="0" min="0" max="50"></meter>
+            <label for="is_numebre_of_characters2" style="color: green;">0</label><br><br>
+
+            <input type="submit" value="Send Answer">
+
+        </form>
+        
+    </div>
     <section id="Overview-of-Computer-Based-Information-Systems">
         <h2>Overview of Computer-Based Information Systems</h2>
         <p>Organizations refer to their management information systems functional area by several names,
@@ -160,6 +189,8 @@
     <section id=""></section>
     <h2>How Does IT Impact Organizations?</h2>
     <h2>Importance of Information Systems to Society</h2>
+    
+    
 </body>
 
 </html>
