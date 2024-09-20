@@ -1,56 +1,35 @@
-<<<<<<< HEAD
-
 
 document.getElementById("information_system").addEventListener("input",function(){
     const text = this;
     const meter = document.getElementById("meter");
-    const number_char = document.getElementById("is_number_of_characters");
+    const number_char = document.getElementById("show_number");
     progressBarAtualizer(text,meter,number_char);
-    console.log(text.value);
-    console.log(meter.value);
-    console.log(number_char);
+    
+})
+document.getElementById("information_system2").addEventListener("input",function(){
+    const text = this;
+    const meter = document.getElementById("meter2");
+    const number_char = document.getElementById("show_number2");
+    progressBarAtualizer(text,meter,number_char);
+    
 })
 
 function progressBarAtualizer(textElement,meterElement,number_charElement){
-    if((textElement !== null) && (meterElement!== null) && (number_charElement !== null)){
-            updateTheMeter(textElement,meterElement,number_charElement)     
+    if((textElement !== null) && (meterElement!== null) && (number_charElement!== null)){
+        updateTheMeter(textElement,meterElement,number_charElement)     
     }
-    console.log("segunda")
     
 }
 
 
 function updateTheMeter(textElement,meterElement,number_charElement){ 
-    var corrent_number_char = textElement.value.lenght;
-    var max_number = meterElement.getAtribute("max");
-    console.log("tretas");
+    var corrent_number_char = textElement.value.length;
+    var max_number = meterElement.max;
+    
     if(corrent_number_char>max_number){ 
         textElement.value = textElement.value.substring(0, max_number);
         corrent_number_char=max_number;
     }
     meterElement.value = corrent_number_char;
     number_charElement.innerText = "" + corrent_number_char + "/" + max_number; 
-    console.log("terceir")
-=======
-var text = document.getElementById("information_system");
-var meter = document.getElementById("meter");
-var number_char = document.getElementById("is_numebre_of_characters")
-console.log("tretas")
-if((text !== null) && (meter!== null) && (number_char !== null)){
-    text.addEventListener("keyup", (e)=>{ 
-        updateTheMeter(text,meter,number_char)
-    });
-    
-}
-
-function updateTheMeter(textElement,meterElement,number_charElement){ 
-    var corrent_number_char = textElement.valeu.lenght;
-    var max_number = meterElement.getAtribute("max");
-    if(corrent_number_char>max_number){ 
-        textElement.valeu = textElement.valeu.substring(0, max_number);
-        corrent_number_char=max_number;
-    }
-    meterElement.valeu = corrent_number_char;
-    number_charElement.innerText = "" + corrent_number_char + "/" + max_number; 
->>>>>>> 612d9490d75b93814a5f5516a69859a71990fd5e
 }

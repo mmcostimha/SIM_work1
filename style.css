@@ -35,3 +35,6 @@
     border: 2px solid rgb(43, 179, 233);
     width: 80%;
 }
+#show_number #show_number2{
+    display: inline;
+}
